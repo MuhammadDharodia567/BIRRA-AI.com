@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRRA AI</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            flex-direction: column;
+        }
+        .chat-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .branding-cover {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #121212;
+            z-index: 2;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            sessionStorage.clear(); // Clears chat history when page is reloaded
+        };
+    </script>
+</head>
+<body>
+    <div class="chat-container">
+        <iframe src="https://www.chatbase.co/chatbot-iframe/Q2EDdRGTflLGukTgxy7n6"></iframe>
+        <div class="branding-cover"></div>
+    </div>
+</body>
+</html>
